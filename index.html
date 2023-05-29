@@ -42,14 +42,14 @@
     </header>
     <main class="main-index">
       <h1 class="visually-hidden">городок Седона</h1>
-      <div class="performance">
-        <p class="performance-title">
+      <section class="hero">
+        <b class="hero-title">
           Седона — небольшой городок в Аризоне, заслуживающий большего!
-        </p>
-        <p class="performance-reason">
+        </b>
+        <p class="hero-reason">
           Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!
         </p>
-      </div>
+      </section>
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества</h2>
         <ul class="advantages-list">
@@ -85,11 +85,11 @@
           </li>
         </ul>
       </section>
-      <div class="performance">
-        <p class="performance-title">
+      <div class="invite">
+        <b class="invite-title">
           Приезжайте в Седону отдохнуть в комфорте и уюте!
-        </p>
-        <p class="performance-reason">
+        </b>
+        <p class="invite-reason">
           Опытный персонал и качественное обслуживание!
         </p>
       </div>
@@ -115,13 +115,24 @@
           </li>
         </ul>
       </section>
-      <div class="search">
+      <section class="search">
         <h3 class="search-title">Заинтересовались?</h3>
-        <p class="search-request">
+        <p class="search-description">
           Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
         </p>
         <a class="button button-search" href="#">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
-      </div>
+      </section>
+      <section class="subscribe">
+        <h3 class="subscribe-title">Подпишитесь на рассылку</h3>
+        <p class="subscribe-description">
+          Только полезная информация и никакого спама, честное бойскаутское!
+        </p>
+        <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+          <label for="distribution-email" ></label>
+          <input type="email" id="distribution-email" name="distribution-email" placeholder="Ваш e-mail">
+          <button class="button button-subscribe" type="submit">Подписаться</button>
+        </form>
+      </section>
     </main>
   </body>
 </html>
