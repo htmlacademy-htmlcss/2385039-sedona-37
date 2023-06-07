@@ -1,0 +1,79 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navigation-link {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.main-header {
+  background: url(/images/index-background.jpg);
+  width: 1200px;
+  height: 485px;
+}
+
+.hero {
+  color: #000000;
+}
+
+.hero-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.hero-reason {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.advantages-item {
+  width: 400px;
+  height: 385px;
+  color: #000000;
+}
+
+.advantages-item_light {
+  color: #FFFFFF;
+  background: #82B3D3;
+}
+
+.advantages-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.advantages-description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
