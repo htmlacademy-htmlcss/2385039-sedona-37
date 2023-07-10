@@ -5,12 +5,12 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="icon" href="favicon.ico">
-    <link rel="icon" href="./images/favicon.svg" type="image/svg">
+    <link rel="icon" sizes="32x32" href="./images/favicon.png" type="image/png">
   </head>
 
   <body>
     <div class="page-container">
+      <!--Шапка сайта-->
       <header class="page-header">
         <nav class="header-navigation">
           <a href="index.html"><img class="page-header-logo" src="./images/content/logo.svg" width="140" height="70"
@@ -47,10 +47,13 @@
           </ul>
         </nav>
       </header>
+      <!--Главная страница сайта-->
       <main class="main-container">
+        <!--Секция фильтр гостиниц-->
         <section class="filters-section">
           <div class="header-inner">
             <h1 class="inner-title">Гостиницы Седона</h1>
+            <!--Хлебные крошки-->
             <ul class="breadcrumbs">
               <li class="breadcrumbs-list">
                 <a class="breadcrumbs-link-home" href="index.html">
@@ -62,20 +65,22 @@
                   </svg>
                 </a>
               </li>
+              <!--
               <li class="breadcrumbs-list">
-                <a class="breadcrumbs-link-arrow" href="#">
+                <a class="breadcrumbs-link-arrow">
                   <svg width="8" height="11" viewBox="0 0 8 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M6.91526 4.96875L2.16526 0.71875C1.91526 0.46875 1.41526 0.46875 1.04026 0.71875C0.665263 0.96875 0.790263 1.46875 1.04026 1.71875L5.16526 5.46875L1.16526 9.21875C0.915263 9.46875 0.915263 9.96875 1.16526 10.2188C1.16526 10.3438 1.54026 10.4687 1.66526 10.4687C1.79026 10.4687 2.04026 10.3438 2.16526 10.2188L6.91526 5.96875C7.29026 5.71875 7.29026 5.21875 6.91526 4.96875Z"
                       fill="white" />
                   </svg>
                 </a>
-              </li>
+              </li> -->
               <li class="breadcrumbs-list">
                 <a class="breadcrumbs-link">Гостиницы</a>
               </li>
             </ul>
           </div>
+          <!--Фильтрация списка по категориям-->
           <div class="catalog-search-list">
             <h2 class="visually-hidden">Список отелей с фильтрами</h2>
             <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
@@ -125,39 +130,38 @@
                 </fieldset>
               </div>
               <div class="filter-custom-container">
-                <div class="catalog-filter-custom">
-                  <fieldset>
-                    <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-                    <div class="range">
-                      <div class="range-wrapper-inputs">
-                        <label class="custom">
-                          <input class="range-input" type="number" value="0" name="min-price">
-                        </label>
-                        <label class="custom">
-                          <input class="range-input" type="text" value="9000" name="max-price">
-                        </label>
-                      </div>
+                <fieldset class="catalog-filter-custom">
+                  <legend class="catalog-filter-title">Стоимость, ₽:</legend>
+                  <div class="range">
+                    <div class="range-wrapper-inputs">
+                      <label class="custom">
+                        <input class="range-input" type="number" value="0" name="min-price" min="0">
+                        <span>от</span>
+                      </label>
+                      <label class="custom">
+                        <input class="range-input" type="number" value="9000" name="max-price">
+                        <span>до</span>
+                      </label>
                     </div>
-                  </fieldset>
+                  </div>
                   <div class="range-scale">
                     <div class="range-bar">
                       <button class="range-toggle toggle-min" type="button">
-                        <span class="visually-hidden">Изменить минимальную цену.</span>
                       </button>
                       <button class="range-toggle toggle-max" type="button">
-                        <span class="visually-hidden">Изменить максимальную цену.</span>
                       </button>
                     </div>
                   </div>
+                </fieldset>
+                <div class="filter-button">
+                  <button class="button button-submit" type="submit">Применить</button>
+                  <button class="button button-reset" type="reset">Сбросить</button>
                 </div>
-                  <div class="filter-button">
-                    <button class="button button-submit" type="submit">Применить</button>
-                    <button class="button button-reset" type="reset">Сбросить</button>
-                  </div>
               </div>
             </form>
           </div>
         </section>
+        <!--Сортировка списка по параметрам-->
         <section class="select-container">
           <div class="select">
             <h3 class="select-title">Найдено гостиниц: 38</h3>
@@ -203,6 +207,7 @@
               </a>
             </div>
           </div>
+          <!--Каталог отелей-->
           <ul class="catalog-cards-list">
             <li class="catalog-cards">
               <a class="catalog-cards-link" href="#">
@@ -265,6 +270,7 @@
               <p class="catalog-cards-rating">Рейтинг: 5,0</p>
             </li>
           </ul>
+          <!--Пагинация-->
           <ul class="pagination">
             <li class="pagination-item">
               <a class="pagination-link pagination-current">1</a>
@@ -286,6 +292,7 @@
             </li>
           </ul>
         </section>
+        <!--Подписка-->
         <section class="subscribe">
           <div class="subscribe-container">
             <h3 class="subscribe-title">Подпишитесь на рассылку</h3>
@@ -301,6 +308,7 @@
           </div>
         </section>
       </main>
+      <!--Подвал сайта-->
       <footer class="page-footer">
         <div class="page-footer-container">
           <h3 class="visually-hidden">Ссылки на социальные сети и телефон для связи</h3>

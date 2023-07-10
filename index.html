@@ -5,8 +5,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="icon" href="favicon.ico">
-    <link rel="icon" href="./images/favicon.svg" type="image/svg">
+    <link rel="icon" sizes="32x32" href="./images/favicon.png" type="image/png">
   </head>
 
   <body>
@@ -158,8 +157,8 @@
             </p>
             <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
               <label class="email-form" for="distribution-email"></label>
-              <input class="input-email" type="email" id="distribution-email"
-                name="distribution-email" placeholder="Ваш e-mail">
+              <input class="input-email" type="email" id="distribution-email" name="distribution-email"
+                placeholder="Ваш e-mail">
               <button class="button button-subscribe" type="submit">Подписаться</button>
             </form>
           </div>
@@ -224,6 +223,35 @@
           </div>
         </div>
       </footer>
+    </div>
+    <div class="modal-container">
+      <div class="modal modal-auth">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+            <div class="field-group">
+              <label class="date-form" for="date-entry">Дата заезда:</label>
+              <input class="field-date" type="text" id="date-entry" name="date-entry" value="27 апреля 2020">
+              <p class="error-message">Мы не можем отправить вас в прошлое.</p>
+            </div>
+            <div class="field-group">
+              <label class="date-form" for="date-departure">Дата выезда:</label>
+              <input class="field-date" type="text" id="date-departure" name="date-departure" value="1 сентября 2023">
+              <p class="confirm-message">На эти даты есть свободные номера. Пока есть.</p>
+            </div>
+            <div class="field-group">
+              <label class="quantity-form" for="quantity-adults">Взрослые:</label>
+              <input class="field-quantity" type="number" id="quantity-adults" name="quantity-adults" value="2">
+              <label class="quantity-form" for="quantity-childs">Дети:</label>
+              <input class="field-quantity" type="number" id="quantity-childs" name="quantity-childs" value="2">
+            </div>
+            <button class="button search-form-button" type="submit">Найти</button>
+          </form>
+        </section>
+      </div>
     </div>
   </body>
 
