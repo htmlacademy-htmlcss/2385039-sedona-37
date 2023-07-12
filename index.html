@@ -232,23 +232,68 @@
         <section class="modal-content">
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
           <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
-            <div class="field-group">
-              <label class="date-form" for="date-entry">Дата заезда:</label>
-              <input class="field-date" type="text" id="date-entry" name="date-entry" value="27 апреля 2020">
+            <div class="form-label">
+              <div class="field-group">
+                <label class="date-form" for="date-entry">Дата заезда:</label>
+                <input class="field-date" type="text" id="date-entry" name="date-entry" value="27 апреля 2020"
+                  placeholder="Укажите дату">
+              </div>
               <p class="error-message">Мы не можем отправить вас в прошлое.</p>
-            </div>
-            <div class="field-group">
-              <label class="date-form" for="date-departure">Дата выезда:</label>
-              <input class="field-date" type="text" id="date-departure" name="date-departure" value="1 сентября 2023">
+              <div class="field-group">
+                <label class="date-form" for="date-departure">Дата выезда:</label>
+                <input class="field-date" type="text" id="date-departure" name="date-departure" value="1 сентября 2023"
+                  placeholder="Укажите дату">
+              </div>
               <p class="confirm-message">На эти даты есть свободные номера. Пока есть.</p>
+              <div class="quantity-container">
+                <div class="adults">
+                  <label class="quantity-form" for="quantity-adults">Взрослые:</label>
+                  <div class="quantity-buttons">
+                    <button class="minus" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="2"
+                        fill="currentColor" viewBox="0 0 14 2">
+                        <path d="M0 0v2h14V0H0Z" />
+                      </svg></button>
+                    <input class="field-quantity" type="text" id="quantity-adults" name="quantity-adults" value="2">
+                    <button class="plus" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                        fill="currentColor" viewBox="0 0 14 14">
+                        <path d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="child">
+                  <label class="quantity-form" for="quantity-childs">Дети:</label>
+                  <div class="tooltip">
+                    <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-child"
+                      id="tooltip-label-child">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                        viewBox="0 0 26 26">
+                        <circle cx="13" cy="13" r="13" fill="#83B3D3" />
+                        <path fill="#fff" fill-rule="evenodd" d="M12 7h2v2h-2V7Zm2 12h-2v-9h2v9Z" clip-rule="evenodd" />
+                      </svg>
+                    </button>
+                    <div class="tooltip-text" role="tooltip" id="tooltip-label-quantity">Укажите количество детей,
+                      которые
+                      будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+                    </div>
+                  </div>
+                  <div class="quantity-buttons">
+                    <button class="minus" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="2"
+                        fill="currentColor" viewBox="0 0 14 2">
+                        <path d="M0 0v2h14V0H0Z" />
+                      </svg>
+                    </button>
+                    <input class="field-quantity" type="text" id="quantity-childs" name="quantity-childs" value="2">
+                    <button class="plus" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                        fill="currentColor" viewBox="0 0 14 14">
+                        <path d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <button class="button search-form-button" type="submit">Найти</button>
             </div>
-            <div class="field-group">
-              <label class="quantity-form" for="quantity-adults">Взрослые:</label>
-              <input class="field-quantity" type="number" id="quantity-adults" name="quantity-adults" value="2">
-              <label class="quantity-form" for="quantity-childs">Дети:</label>
-              <input class="field-quantity" type="number" id="quantity-childs" name="quantity-childs" value="2">
-            </div>
-            <button class="button search-form-button" type="submit">Найти</button>
           </form>
         </section>
       </div>

@@ -75,8 +75,8 @@ body {
   width: 170px;
   padding-right: 30px;
   margin-bottom: -6px;
-  z-index: 1;
   object-fit: contain;
+  z-index: 1;
 }
 
 .navigation-list {
@@ -199,6 +199,7 @@ body {
 .navigation-user-link:hover,
 .navigation-user-link:focus {
   background: #615048;
+  outline: none;
 }
 
 .navigation-user-link:active {
@@ -268,8 +269,6 @@ body {
   width: 620px;
   margin: 0;
   margin-bottom: 25px;
-  outline: 2px solid red;
-  outline-offset: -2px;
 }
 
 .main-reason {
@@ -278,8 +277,6 @@ body {
   line-height: 26px;
   text-align: center;
   margin: 0;
-  outline: 2px solid red;
-  outline-offset: -2px;
 }
 
 .advantages-container {
@@ -294,8 +291,6 @@ body {
   width: 1200px;
   display: grid;
   grid-template-columns: repeat(3, 400px);
-  outline: 2px solid red;
-  outline-offset: -2px;
 }
 
 .advantages-item {
@@ -307,8 +302,6 @@ body {
   flex-direction: column;
   align-items: center;
   list-style-type: none;
-  outline: 2px solid red;
-  outline-offset: -2px;
 }
 
 .advantages-image {
@@ -357,10 +350,7 @@ body {
   margin: 0 auto;
   margin-bottom: 30px;
   position: relative;
-  outline: 2px solid red;
-  outline-offset: -2px;
 }
-
 
 
 .advantages-title::before {
@@ -387,8 +377,6 @@ body {
   width: 230px;
   margin: 0 auto;
   margin-top: 30px;
-  outline: 2px solid red;
-  outline-offset: -2px;
 }
 
 
@@ -401,8 +389,6 @@ body {
   justify-content: center;
   margin: 0;
   padding: 64px 0;
-  outline: 2px solid red;
-  outline-offset: -2px;
 }
 
 .invite-title {
@@ -415,8 +401,6 @@ body {
   width: 505px;
   margin: 0;
   padding: 0;
-  outline: 2px solid red;
-  outline-offset: -2px;
 }
 
 .invite-reason {
@@ -427,8 +411,6 @@ body {
   margin: 0;
   margin-top: 20px;
   padding: 0;
-  outline: 2px solid red;
-  outline-offset: -2px;
 }
 
 /* Services */
@@ -448,8 +430,6 @@ body {
 .services-item:first-child,
 .services-item:last-child {
   background: rgba(131, 179, 211, 0.12);
-  outline: 2px solid red;
-  outline-offset: -2px;
 }
 
 .services-item {
@@ -460,8 +440,6 @@ body {
   width: 400px;
   padding: 80px 85px;
   list-style-type: none;
-  outline: 2px solid red;
-  outline-offset: -2px;
 }
 
 .services-title {
@@ -474,8 +452,6 @@ body {
   margin: 0;
   margin-top: 30px;
   padding: 0;
-  outline: 2px solid red;
-  outline-offset: -2px;
 }
 
 .services-description {
@@ -487,8 +463,6 @@ body {
   margin: 0;
   margin-top: 30px;
   padding: 0;
-  outline: 2px solid red;
-  outline-offset: -2px;
 }
 
 .services-icons {
@@ -501,22 +475,16 @@ body {
 .services-icons-housing {
   background: url("../images/services-icons/housing-icon.svg") no-repeat;
   background-position: center;
-  outline: 2px solid red;
-  outline-offset: -2px;
 }
 
 .services-icons-food {
   background: url("../images/services-icons/food-icon.svg") no-repeat;
   background-position: center;
-  outline: 2px solid red;
-  outline-offset: -2px;
 }
 
 .services-icons-souvenirs {
   background: url("../images/services-icons/souvenirs-icon.svg") no-repeat;
   background-position: center;
-  outline: 2px solid red;
-  outline-offset: -2px;
 }
 
 /* Search*/
@@ -566,6 +534,7 @@ body {
 .button-search:hover,
 .button-search:focus {
   background: #615048;
+  outline: none;
 }
 
 .button-search:active {
@@ -708,6 +677,7 @@ body {
 .footer-social-button-tme:focus,
 .footer-social-button-youtube:focus {
   color: #68A2CA;
+  outline: none;
 }
 
 .footer-social-button-vk:active,
@@ -745,6 +715,7 @@ a[href^="tel:"] {
 
 a[href^="tel:"]:focus {
   color: #756157;
+  outline: none;
 }
 
 a[href^="tel:"]:hover {
@@ -761,7 +732,7 @@ a[href^="tel:"]:active {
   align-items: center;
   margin: 0;
   padding: 0;
-  color: #000000
+  color: #000000;
 }
 
 .footer-contacts-logo-htmlacademy:hover {
@@ -770,6 +741,7 @@ a[href^="tel:"]:active {
 
 .footer-contacts-logo-htmlacademy:focus {
   color: #756157;
+  outline: none;
 }
 
 .footer-contacts-logo-htmlacademy:active {
@@ -804,8 +776,6 @@ a[href^="tel:"]:active {
   margin: 0;
   margin-bottom: 8px;
   padding: 0;
-  outline: 2px solid red;
-  outline-offset: -2px;
 }
 
 /* Хлебные крошки */
@@ -1028,6 +998,7 @@ a[href^="tel:"]:active {
 .range-wrapper-inputs {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 36px;
 }
 
 .range-wrapper-inputs input {
@@ -1147,8 +1118,6 @@ a[href^="tel:"]:active {
   margin: 0;
   margin-right: auto;
   padding: 0;
-  outline: 2px solid red;
-  outline-offset: -2px;
 }
 
 .select-control {
@@ -1190,6 +1159,7 @@ a[href^="tel:"]:active {
 
 .select-grid-toggle:focus {
   border: 2px solid #68A2CA;
+  outline: none;
 }
 
 .selectgrid-toggle:active {
@@ -1241,9 +1211,8 @@ a[href^="tel:"]:active {
 }
 
 .catalog-cards-link {
-  outline: 2px solid red;
-  outline-offset: -2px;
   grid-column: 1 / -1;
+  text-decoration: none;
 }
 
 .catalog-cards-image {
@@ -1254,14 +1223,17 @@ a[href^="tel:"]:active {
 }
 
 .catalog-title {
+  font: inherit;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
+  color: rgba(0, 0, 0, 1);
   margin: 0;
   padding: 0;
   grid-column: 1 / -1;
   outline: 2px solid red;
   outline-offset: -2px;
+
 }
 
 .catalog-cards-details {
@@ -1279,25 +1251,26 @@ a[href^="tel:"]:active {
 
 .catalog-cards-item,
 .catalog-cards-price {
+  font: inherit;
+  color: rgba(51, 51, 51, 1);
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   margin: 0;
   padding: 0;
-  outline: 2px solid red;
-  outline-offset: -2px;
 }
 
 .catalog-cards-details {
   width: 140px;
-  background: #756157;
+  background: rgba(117, 97, 87, 1);
   border-radius: 4px;
+  font: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: rgba(255, 255, 255, 1);
   margin: 0;
   padding: 8px 0;
   grid-column: 1 / 2;
@@ -1306,10 +1279,11 @@ a[href^="tel:"]:active {
 }
 
 .button-catalog {
+  font: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
-  color: #FFFFFF;
+  color: rgba(255, 255, 255, 1);
   text-transform: uppercase;
   width: 140px;
   min-height: 36px;
@@ -1321,42 +1295,40 @@ a[href^="tel:"]:active {
 
 .button-catalog:hover,
 .button-catalog:focus {
-  background: #68A2CA;
+  background-color: #68A2CA;
+  outline: none;
 }
 
 .button-catalog:active {
-  background: #82B3D3;
-  opacity: 0.3;
+  background-color: rgba(130, 179, 211, 1);
+  color: rgba(255, 255, 255, 0.3)
 }
 
 
 .button-catalog-basic {
-  background: #82B3D3;
+  background-color: rgba(130, 179, 211, 1);
   outline: 2px solid red;
   outline-offset: -2px;
 }
 
 .button-catalog-selected {
-  background: #7DB54F;
-
-  outline: 2px solid red;
-  outline-offset: -2px;
+  background-color: rgba(125, 181, 79, 1);
 }
 
 .catalog-cards-rating {
+  font: inherit;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
-  background: #F2F2F2;
+  color: rgba(51, 51, 51, 1);
+  background-color: rgba(242, 242, 242, 1);
   border-radius: 4px;
   width: 140px;
   margin: 0;
   padding: 9px 22px 8px 23px;
   grid-column: 2 / -1;
-  outline: 2px solid red;
-  outline-offset: -2px;
 }
 
 .catalog-stars-rating {
@@ -1367,8 +1339,6 @@ a[href^="tel:"]:active {
   width: 140px;
   height: 100%;
   grid-column: 1 / 2;
-  outline: 2px solid red;
-  outline-offset: -2px;
 }
 
 .catalog-stars-rating-three {
@@ -1388,16 +1358,12 @@ a[href^="tel:"]:active {
   grid-template-columns: repeat(10, 60px);
   list-style-type: none;
   gap: 8px;
-  outline: 2px solid red;
-  outline-offset: -2px;
 }
 
 .pagination-item {
   display: flex;
   align-items: center;
   justify-content: center;
-  outline: 2px solid red;
-  outline-offset: -2px;
 }
 
 .pagination-link {
@@ -1414,8 +1380,6 @@ a[href^="tel:"]:active {
   display: flex;
   align-items: center;
   justify-content: center;
-  outline: 2px solid red;
-  outline-offset: -2px;
 }
 
 .pagination-link:hover {
@@ -1426,6 +1390,7 @@ a[href^="tel:"]:active {
 .pagination-link:focus {
   border: 1px solid #82B3D3;
   background-color: rgba(104, 162, 202, 1);
+  outline: none;
 }
 
 .pagination-link:active {
@@ -1435,8 +1400,6 @@ a[href^="tel:"]:active {
 .pagination-current {
   color: #000000;
   background: #F2F2F2;
-  outline: 2px solid red;
-  outline-offset: -2px;
 }
 
 .pagination-current:hover,
@@ -1449,55 +1412,42 @@ a[href^="tel:"]:active {
 .pagination-next {
   color: #000000;
   background-color: #FFFFFF;
-  outline: 2px solid red;
-  outline-offset: -2px;
 }
 
 /* Модальное окно */
 .modal-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(242, 242, 242, 0.8);
-    outline: 2px solid red;
-    outline-offset: -2px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(242, 242, 242, 0.8);
+  z-index: 2;
 }
 
 .modal {
-  margin: auto;
-  padding: 64px 70px;
+  margin: 0 auto;
+  padding: 0;
   background: #FFF;
   box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.15);
   position: relative;
-  width: 717px;
   border-radius: 30px;
-  min-height: 576px;
-  display: flex;
-  align-items: flex-start;
-  outline: 2px solid red;
-  outline-offset: -2px;
+  width: 717px;
 }
 
 .modal-content {
   margin: 0;
-  padding: 0;
-  outline: 2px solid red;
-  outline-offset: -2px;
+  padding: 64px 70px;
 }
 
 
 .modal-close-button {
   position: absolute;
-  display: flex;
   padding: 0;
   top: 64px;
   right: 52px;
   width: 52px;
   height: 52px;
-  color: #000;
   cursor: pointer;
   background-image: url(../images/modal-container/close.svg);
   background-repeat: no-repeat;
@@ -1505,10 +1455,21 @@ a[href^="tel:"]:active {
   border: none;
   border-radius: 50%;
   background-position: center;
-  order: 1;
-  outline: 2px solid red;
-  outline-offset: -2px;
 }
+
+.modal-close-button:hover {
+  background-color: rgba(230, 230, 230, 1);
+}
+
+.modal-close-button:focus {
+  border: 3px solid rgba(131, 179, 211, 1);
+  outline: none;
+}
+
+.modal-close-button:active {
+  opacity: 0.3;
+}
+
 
 .modal-title {
   margin: 0;
@@ -1519,23 +1480,18 @@ a[href^="tel:"]:active {
   font-weight: 700;
   color: #000000;
   text-transform: uppercase;
-  outline: 2px solid red;
-  outline-offset: -2px;
 }
 
 .field-group {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-content: center;
-  outline: 2px solid red;
-  outline-offset: -2px;
-
+  display: grid;
+  grid-template-columns: 137px 440px;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  width: 577px;
+  row-gap: 48px;
 }
 
-.field-group:not(:first-child) {
-  margin-top: 48px;
-}
 
 .date-form,
 .quantity-form {
@@ -1548,9 +1504,7 @@ a[href^="tel:"]:active {
   text-transform: capitalize;
   padding: 0;
   margin: 0;
-  outline: 2px solid red;
-  outline-offset: -2px;
-  }
+}
 
 
 .field-date {
@@ -1562,18 +1516,72 @@ a[href^="tel:"]:active {
   line-height: 24px;
   padding: 12px 20px;
   border: none;
-  box-sizing: border-box;
   appearance: none;
   width: 440px;
   height: 48px;
   background-image: url(../images/modal-container/date.svg);
   background-repeat: no-repeat;
   border-radius: 4px;
+  box-sizing: border-box;
   background-color: rgba(242, 242, 242, 1);
   background-position: right 20px center;
-  outline: 2px solid red;
-  outline-offset: -2px;
-  }
+}
+
+input.field-date::placeholder {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.field-date:hover {
+  background-color: rgba(230, 230, 230, 1);
+}
+
+.field-date:focus {
+  border: 3px solid rgba(131, 179, 211, 1);
+  background-color: rgba(230, 230, 230, 1);
+  outline: none;
+}
+
+.quantity-container {
+  display: grid;
+  grid-template-columns: 247px 242px;
+  width: 577px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.adults {
+  display: flex;
+  flex-wrap: wrap;
+  width: 247px;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.child {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  width: 242px;
+  justify-content: space-between;
+}
+
+.tooltip-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.quantity-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  border-radius: 4px;
+  background-color: rgba(242, 242, 242, 1);
+}
 
 .field-quantity {
   font: inherit;
@@ -1582,37 +1590,49 @@ a[href^="tel:"]:active {
   font-style: normal;
   font-weight: 700;
   line-height: 20px;
-  margin: 0;
-  padding: 12px 0;
   border: none;
   box-sizing: border-box;
   appearance: none;
-  width: 110px;
+  width: 31px;
   height: 48px;
-  border-radius: 4px;
+  margin: 0;
+  padding: 14px 8px;
   background-color: rgba(242, 242, 242, 1);
-  position: relative;
   text-align: center;
-  outline: 2px solid red;
-  outline-offset: -2px;
 }
 
-.field-quantity::before {
-  content: "";
-  width: 20px;
-  height: 20px;
-  background-image: url(../images/modal-container/minus.svg);
-  background-repeat: no-repeat;
-  background-position: left 10px center;
-  position: absolute;
-  box-sizing: border-box;
+.minus,
+.plus {
+  width: 40px;
+  height: 48px;
+  border: none;
+  margin: 0;
   padding: 14px 10px;
-  order: 2;
-  outline: 2px solid red;
-  outline-offset: -2px;
+  box-sizing: border-box;
+  color: rgba(117, 97, 87, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+.minus:hover,
+.plus:hover,
+.field-quantity:hover {
+  border-radius: 4px;
+  border: 3px solid rgba(130, 179, 211, 1);
+  outline: none;
+}
 
+.minus:focus,
+.plus:focus,
+input.field-quantity:focus {
+  color: rgba(0, 0, 0, 1);
+  outline: none;
+}
 
+.minus:active,
+.plus:active {
+  color: rgba(0, 0, 0, 0.2);
 }
 
 .error-message {
@@ -1622,10 +1642,10 @@ a[href^="tel:"]:active {
   font-style: normal;
   font-weight: 400;
   line-height: 21px;
-  padding: 0;
-  margin: 0 auto;
-  outline: 2px solid red;
-  outline-offset: -2px;
+  padding-left: 157px;
+  padding-top: 4px;
+  padding-bottom: 23px;
+  margin: 0;
 }
 
 .confirm-message {
@@ -1635,19 +1655,89 @@ a[href^="tel:"]:active {
   font-style: normal;
   font-weight: 400;
   line-height: 21px;
+  padding-left: 157px;
+  padding-top: 4px;
+  padding-bottom: 23px;
+  margin: 0;
+}
+
+.tooltip {
+  position: absolute;
+  margin: 0;
+  margin-left: 45px;
+  width: 26px;
+  height: 26px;
+}
+
+.tooltip-toggle {
+  border: none;
+  background-color: transparent;
   padding: 0;
   margin: 0;
-  outline: 2px solid red;
-  outline-offset: -2px;
+  margin-left: 12px;
+  display: block;
+  cursor: pointer;
+  width: 26px;
+  height: 26px;
+}
 
+.tooltip-toggle:focus {
+  outline: none;
+}
+
+.tooltip-icon {
+  width: 100%;
+  height: 100%;
+  color: #242424;
+  display: block;
+}
+
+.tooltip-toggle:hover .tooltip-icon {
+  color: rgba(131, 179, 211, 1);
+  border-radius: 10px;
+}
+
+.tooltip-text::before {
+  content: "";
+  background-image: url(../images/modal-container/triangle.svg);
+  width: 19px;
+  height: 9px;
+  position: absolute;
+  top: -9px;
+  right: 120px;
+}
+
+.tooltip-text {
+  background-color: rgba(51, 51, 51, 1);
+  color: rgba(255, 255, 255, 1);
+  text-transform: none;
+  border-radius: 10px;
+  width: 256px;
+  padding: 15px 18px 18px 22px;
+  font: inherit;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  position: absolute;
+  left: -102px;
+  bottom: -147px;
+  display: none;
 }
 
 
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
+  z-index: 1000;
+  display: block;
+}
+
 .search-form-button {
+  border: none;
   border-radius: 10px;
-  background: #83B3D3;
+  background: rgba(131, 179, 211, 1);
   font: inherit;
-  color: rgba(255, 255, 255, 1) ;
+  color: rgba(255, 255, 255, 1);
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -1655,12 +1745,17 @@ a[href^="tel:"]:active {
   text-transform: uppercase;
   width: 577px;
   text-align: center;
-  display: flex;
-  justify-content: center;
-  align-self: self-end;
   padding: 18px 77px;
   margin: 0;
-  margin-top: 96px;
-  outline: 2px solid red;
-  outline-offset: -2px;
+  margin-top: 48px;
+}
+
+.search-form-button:hover,
+.search-form-button:focus {
+  background-color: rgba(104, 162, 202, 1);
+  outline: none;
+}
+
+.search-form-button:active {
+  color: rgba(255, 255, 255, 0.3);
 }
