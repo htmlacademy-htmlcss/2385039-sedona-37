@@ -1483,6 +1483,7 @@ a[href^="tel:"]:active {
   grid-template-columns: repeat(10, 60px);
   list-style-type: none;
   gap: 8px;
+  position: relative;
 }
 
 .pagination-item {
@@ -1505,6 +1506,15 @@ a[href^="tel:"]:active {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.pagination::before{
+  width: 1060px;
+  height: 1px;
+  background-color: #E6E6E6;
+  position: absolute;
+  content: "";
+  top: -40px;
 }
 
 .pagination-link:hover {
