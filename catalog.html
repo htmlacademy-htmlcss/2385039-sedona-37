@@ -11,7 +11,7 @@
   <body>
     <div class="page-container">
       <!--Шапка сайта-->
-      <header class="page-header">
+      <header class="page-header" data-test="header">
         <nav class="header-navigation">
           <a href="index.html"><img class="page-header-logo" src="./images/content/logo.svg" width="140" height="70"
               alt="Логотип города Седона."></a>
@@ -48,9 +48,9 @@
         </nav>
       </header>
       <!--Главная страница сайта-->
-      <main class="main-container">
+      <main class="main-container" data-test="main">
         <!--Секция фильтр гостиниц-->
-        <section class="filters-section">
+        <section class="filter">
           <div class="header-inner">
             <h1 class="inner-title">Гостиницы Седона</h1>
             <!--Хлебные крошки-->
@@ -81,7 +81,7 @@
             </ul>
           </div>
           <!--Фильтрация списка по категориям-->
-          <div class="catalog-search-list">
+          <div class="catalog-search-list" data-test="filter">
             <h2 class="visually-hidden">Список отелей с фильтрами</h2>
             <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
               <div class="infrastructure">
@@ -144,7 +144,7 @@
                       </label>
                     </div>
                   <div class="range-scale">
-                    <div class="range-bar" style="right: 62px; width: 226px">
+                    <div class="range-bar" style="right: 72px; width: 216px">
                       <button class="range-toggle toggle-min" type="button">
                         <span class="visually-hidden">Изменить минимальную цену.</span>
                       </button>
@@ -164,7 +164,7 @@
           </div>
         </section>
         <!--Сортировка списка по параметрам-->
-        <section class="select-container">
+        <section class="catalog" data-test="catalog">
           <div class="select">
             <h3 class="select-title">Найдено гостиниц: 38</h3>
             <select class="select-control" aria-label="Сортировка">
@@ -174,7 +174,7 @@
             </select>
             <div class="select-buttons">
               <a class="select-grid-toggle select-grid-toggle-current select-grid-panel" href="#">
-                <span class="visually-hidden"><svg width="16" height="14" viewBox="0 0 16 14" fill="none"
+                <span class="visually-hidden">Отсортировать список в виде панели<svg width="16" height="14" viewBox="0 0 16 14" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path d="M4 0H0V6H4V0Z" fill="black" />
                     <path d="M16 0H12V6H16V0Z" fill="black" />
@@ -186,7 +186,7 @@
                 </span>
               </a>
               <a href="#" class="select-grid-toggle select-grid-table">
-                <span class="visually-hidden"><svg width="16" height="14" viewBox="0 0 16 14" fill="none"
+                <span class="visually-hidden">Отсортировать список в виде таблицы<svg width="16" height="14" viewBox="0 0 16 14" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path d="M16 12H0V14H16V12Z" fill="black" />
                     <path d="M14 2V8H2V2H14ZM16 0H0V10H16V0Z" fill="black" />
@@ -194,7 +194,7 @@
                 </span>
               </a>
               <a href="#" class="select-grid-toggle select-grid-list">
-                <span class="visually-hidden"><svg width="16" height="14" viewBox="0 0 16 14" fill="none"
+                <span class="visually-hidden">Отсортировать список в виде списка<svg width="16" height="14" viewBox="0 0 16 14" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path d="M2 0H0V2H2V0Z" fill="black" />
                     <path d="M16 0H4V2H16V0Z" fill="black" />
@@ -295,7 +295,7 @@
           </ul>
         </section>
         <!--Подписка-->
-        <section class="subscribe">
+        <section class="subscribe" data-test="subscribe">
           <div class="subscribe-container">
             <h3 class="subscribe-title">Подпишитесь на рассылку</h3>
             <p class="subscribe-description">
@@ -311,7 +311,7 @@
         </section>
       </main>
       <!--Подвал сайта-->
-      <footer class="page-footer">
+      <footer class="page-footer" data-test="footer">
         <div class="page-footer-container">
           <h3 class="visually-hidden">Ссылки на социальные сети и телефон для связи</h3>
           <div class="footer-social-container">
