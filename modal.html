@@ -4,13 +4,13 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/modal.css">
     <link rel="icon" sizes="32x32" href="./images/favicon.png" type="image/png">
   </head>
 
   <body>
     <div class="page-container">
-      <header class="page-header" data-test="header">
+      <header class="page-header">
         <nav class="header-navigation">
           <img class="page-header-logo" src="./images/content/logo.svg" width="140" height="70"
             alt="Логотип города Седона.">
@@ -46,15 +46,13 @@
           </ul>
         </nav>
       </header>
-      <main class="main-container" data-test="main">
-        <section class="hero" data-test="hero">
+      <main class="main-container">
+        <section class="hero">
           <div class="hero-title">
             <h1 class="visually-hidden">городок Седона</h1>
             <img class="hero-image-welcome" src="./images/content/welcome.svg" width="458" height="352"
               alt="Добро пожаловать в прекрасный город Седона.">
           </div>
-
-
           <div class="main-index">
             <h2 class="visually-hidden">Информация о городе</h2>
             <p class="main-title">
@@ -65,7 +63,7 @@
             </p>
           </div>
         </section>
-          <section class="advantages" data-test="advantages">
+        <section class="advantages">
           <h2 class="visually-hidden">Преимущества</h2>
           <div class="advantages-container">
             <ul class="advantages-list">
@@ -110,15 +108,15 @@
             </ul>
           </div>
         </section>
-        <section class="services" data-test="service">
-          <div class="invite">
-            <h3 class="invite-title">
-              Приезжайте в Седону отдохнуть в комфорте и уюте!
-            </h3>
-            <p class="invite-reason">
-              Опытный персонал и качественное обслуживание!
-            </p>
-          </div>
+        <div class="invite">
+          <h3 class="invite-title">
+            Приезжайте в Седону отдохнуть в комфорте и уюте!
+          </h3>
+          <p class="invite-reason">
+            Опытный персонал и качественное обслуживание!
+          </p>
+        </div>
+        <section class="service">
           <ul class="services-list">
             <li class="services-item">
               <div class="services-icons services-icons-housing"></div>
@@ -143,7 +141,7 @@
             </li>
           </ul>
         </section>
-        <section class="search" data-test="search">
+        <section class="search">
           <h3 class="search-title">Заинтересовались?</h3>
           <p class="search-description">
             Укажите предполагаемые даты поездки, и&nbsp;мы&nbsp;покажем&nbsp;вам&nbsp;лучшие предложения гостиниц в
@@ -151,7 +149,7 @@
           </p>
           <a class="button button-search" href="#">Поиск гостиницы в Седоне</a>
         </section>
-        <section class="subscribe subscribe-theme-custom" data-test="subscribe">
+        <section class="subscribe subscribe-theme-custom">
           <div class="subscribe-container">
             <h3 class="subscribe-title">Подпишитесь на рассылку</h3>
             <p class="subscribe-description">
@@ -166,7 +164,7 @@
           </div>
         </section>
       </main>
-      <footer class="page-footer" data-test="footer">
+      <footer class="page-footer">
         <div class="page-footer-container">
           <h3 class="visually-hidden">Ссылки на социальные сети и телефон для связи</h3>
           <div class="footer-social-container">
@@ -227,7 +225,7 @@
       </footer>
     </div>
     <div class="modal-container">
-      <div class="modal modal-auth">
+      <div class="modal modal-auth" data-test="modal">
         <button class="modal-close-button">
           <span class="visually-hidden">Закрыть</span>
         </button>
