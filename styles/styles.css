@@ -61,6 +61,12 @@ body {
   padding: 8px 50px;
 }
 
+.button:disabled {
+  background-color: rgba(229, 229, 229, 1);
+  color: rgba(255, 255, 255, 1);
+}
+
+/* Шапка сайта*/
 .page-header {
   max-width: 1200px;
   background-color: #FFFFFF;
@@ -222,6 +228,7 @@ body {
   text-align: center;
 }
 
+/* Главная страница сайта */
 .main-container {
   flex-grow: 1;
 }
@@ -285,6 +292,7 @@ body {
   margin: 0;
 }
 
+/* Преимущества */
 .advantages-container {
   margin: 0;
   padding: 0;
@@ -389,9 +397,6 @@ body {
   margin-top: 30px;
 }
 
-
-
-/* Invite */
 .invite {
   display: flex;
   flex-direction: column;
@@ -426,7 +431,7 @@ body {
   padding: 0;
 }
 
-/* Services */
+/* Сервис */
 .services {
   width: 1200px;
   margin: 0;
@@ -504,7 +509,7 @@ body {
   background-position: center;
 }
 
-/* Search*/
+/* Поиск */
 .search {
   display: flex;
   flex-direction: column;
@@ -566,7 +571,7 @@ body {
 }
 
 
-/* Subscribe */
+/* Подписка */
 .subscribe-container {
   margin: 0;
   padding: 96px 258px 104px 258px;
@@ -642,13 +647,10 @@ body {
   padding: 8px 50px;
 }
 
-
-
-/* Footer */
+/* Подвал сайта */
 .page-footer {
   width: 1200px;
   margin: 0 auto;
-
 }
 
 .page-footer-container {
@@ -927,7 +929,6 @@ a[href^="tel:"]:active {
   font-size: 18px;
   line-height: 23px;
   color: rgba(255, 255, 255, 1);
-  ;
 }
 
 .catalog-filter-checkbox input,
@@ -1232,7 +1233,7 @@ a[href^="tel:"]:active {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.button-reset:hover {
+.button-reset:disabled {
   color: rgba(255, 255, 255, 0.1);
 }
 
@@ -1620,7 +1621,6 @@ a[href^="tel:"]:active {
   z-index: 2;
   align-items: center;
   display: none;
-
 }
 
 .modal {
@@ -1675,7 +1675,6 @@ a[href^="tel:"]:active {
   margin: 0;
   margin-bottom: 64px;
   font: inherit;
-  font-style: normal;
   font-size: 32px;
   line-height: 35px;
   font-weight: 700;
@@ -1892,10 +1891,6 @@ input.field-date::placeholder {
   background-image: url(../images/modal-container/tooltip.svg);
   width: 26px;
   height: 26px;
-}
-
-.tooltip-toggle:focus {
-  outline: none;
 }
 
 .tooltip-icon {

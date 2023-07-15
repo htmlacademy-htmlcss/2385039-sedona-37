@@ -61,6 +61,12 @@ body {
   padding: 8px 50px;
 }
 
+.button:disabled {
+  background-color: rgba(229, 229, 229, 1);
+  color: rgba(255, 255, 255, 1);
+}
+
+/* Шапка сайта*/
 .page-header {
   max-width: 1200px;
   background-color: #FFFFFF;
@@ -99,10 +105,12 @@ body {
 }
 
 .navigation-link {
+  font: inherit;
+  font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
-  color: #000000;
+  color: rgba(0, 0, 0, 1);
   text-decoration: none;
   display: block;
   margin: 0;
@@ -165,17 +173,17 @@ body {
   padding: 22px 12px;
   background: url("../images/navigation-icons/heart-icon.svg") no-repeat;
   background-position: center;
-  color: #000000;
+  color: rgba(0, 0, 0, 1);
   position: relative;
 }
 
 .navigation-icons-heart::before {
   content: "12";
-  color: #FFFFFF;
+  color: rgba(255, 255, 255, 1);
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-family: "PT Sans", sans-serif;
+  font: inherit;
   font-size: 10px;
   font-style: normal;
   font-weight: 400;
@@ -210,15 +218,17 @@ body {
 
 .navigation-link-desire {
   text-decoration: none;
-  color: #FFFFFF;
+  color: rgba(255, 255, 255, 1);
   font-size: 16px;
-  font-family: "PT Sans", sans-serif;
+  font: inherit;
+  font-style: normal;
   font-weight: 700;
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;
 }
 
+/* Главная страница сайта */
 .main-container {
   flex-grow: 1;
 }
@@ -262,6 +272,8 @@ body {
 }
 
 .main-title {
+  font: inherit;
+  font-style: normal;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -280,6 +292,7 @@ body {
   margin: 0;
 }
 
+/* Преимущества */
 .advantages-container {
   margin: 0;
   padding: 0;
@@ -332,7 +345,6 @@ body {
   color: #FFFFFF;
 }
 
-
 .advantages-item:nth-child(odd):not(:first-child):not(:last-child) {
   background-color: rgba(131, 179, 211, 0.12);
 }
@@ -342,6 +354,8 @@ body {
 }
 
 .advantages-title {
+  font: inherit;
+  font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -352,7 +366,6 @@ body {
   margin-bottom: 30px;
   position: relative;
 }
-
 
 .advantages-title::before {
   content: "";
@@ -371,6 +384,8 @@ body {
 }
 
 .advantages-description {
+  font: inherit;
+  font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
@@ -380,9 +395,6 @@ body {
   margin-top: 30px;
 }
 
-
-
-/* Invite */
 .invite {
   display: flex;
   flex-direction: column;
@@ -393,6 +405,7 @@ body {
 }
 
 .invite-title {
+  font: inherit;
   font-style: normal;
   font-weight: 700;
   font-size: 30px;
@@ -405,6 +418,8 @@ body {
 }
 
 .invite-reason {
+  font: inherit;
+  font-style: normal;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
@@ -414,7 +429,7 @@ body {
   padding: 0;
 }
 
-/* Services */
+/* Сервис */
 .services {
   width: 1200px;
   margin: 0;
@@ -444,6 +459,8 @@ body {
 }
 
 .services-title {
+  font: inherit;
+  font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -456,6 +473,8 @@ body {
 }
 
 .services-description {
+  font: inherit;
+  font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
@@ -488,7 +507,7 @@ body {
   background-position: center;
 }
 
-/* Search*/
+/* Поиск */
 .search {
   display: flex;
   flex-direction: column;
@@ -497,6 +516,8 @@ body {
 }
 
 .search-title {
+  font: inherit;
+  font-style: normal;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -508,6 +529,8 @@ body {
 }
 
 .search-description {
+  font: inherit;
+  font-style: normal;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
@@ -519,6 +542,8 @@ body {
 }
 
 .button-search {
+  font: inherit;
+  font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
@@ -544,7 +569,7 @@ body {
 }
 
 
-/* Subscribe */
+/* Подписка */
 .subscribe-container {
   margin: 0;
   padding: 96px 258px 104px 258px;
@@ -561,6 +586,8 @@ body {
 }
 
 .subscribe-title {
+  font: inherit;
+  font-style: normal;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -571,6 +598,8 @@ body {
 }
 
 .subscribe-description {
+  font: inherit;
+  font-style: normal;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
@@ -589,6 +618,7 @@ body {
   border: none;
   box-sizing: border-box;
   font: inherit;
+  font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
@@ -603,6 +633,7 @@ body {
 
 .button-subscribe {
   font: inherit;
+  font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
@@ -614,13 +645,10 @@ body {
   padding: 8px 50px;
 }
 
-
-
-/* Footer */
+/* Подвал сайта */
 .page-footer {
   width: 1200px;
   margin: 0 auto;
-
 }
 
 .page-footer-container {
@@ -700,6 +728,8 @@ body {
 
 a[href^="tel:"] {
   font: inherit;
+  font: inherit;
+  font-style: normal;
   font-weight: 400;
   font-size: 40px;
   line-height: 40px;
