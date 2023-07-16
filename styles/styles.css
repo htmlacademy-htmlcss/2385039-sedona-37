@@ -948,6 +948,7 @@ body {
   padding: 0;
   display: flex;
   align-items: flex-start;
+  appearance: none;
 }
 
 .custom-checkbox {
@@ -1616,7 +1617,6 @@ body {
   height: 100%;
   background-color: rgba(242, 242, 242, 0.8);
   z-index: 2;
-  align-items: center;
   display: none;
 }
 
@@ -1630,6 +1630,12 @@ body {
   width: 717px;
   margin-top: 396px;
 }
+
+.modal-auth {
+  display: flex;
+  align-items: center;
+}
+
 
 .modal-content {
   margin: 0;
