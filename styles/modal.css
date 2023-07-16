@@ -139,10 +139,11 @@ body {
 .navigation-user-list {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   margin: 0;
   margin-left: auto;
+  margin-top: 10px;
   padding: 0;
 }
 
@@ -156,7 +157,6 @@ body {
 .navigation-icons-search {
   display: block;
   width: 44px;
-  height: 100%;
   background-size: cover;
   padding: 22px 12px;
   background: url("../images/navigation-icons/search-icon.svg") no-repeat;
@@ -168,7 +168,6 @@ body {
 .navigation-icons-heart {
   display: block;
   width: 44px;
-  height: 100%;
   background-size: cover;
   padding: 22px 12px;
   background: url("../images/navigation-icons/heart-icon.svg") no-repeat;
@@ -219,13 +218,13 @@ body {
 .navigation-link-desire {
   text-decoration: none;
   color: rgba(255, 255, 255, 1);
-  font-size: 16px;
   font: inherit;
   font-style: normal;
+  font-size: 16px;
   font-weight: 700;
   line-height: 20px;
   text-transform: uppercase;
-  text-align: center;
+  display: flex;
 }
 
 /* Главная страница сайта */
@@ -443,10 +442,10 @@ body {
   padding: 0;
 }
 
-.services-item:first-child,
-.services-item:last-child {
+.services-item:nth-child(odd) {
   background: rgba(131, 179, 211, 0.12);
 }
+
 
 .services-item {
   display: flex;
@@ -631,6 +630,14 @@ body {
   background: rgba(242, 242, 242, 1);
 }
 
+.input-email:hover::placeholder,
+.input-email:focus::placeholder,
+.input-email:hover,
+.input-email:focus {
+  background: rgba(230, 230, 230, 1);
+  outline: none;
+}
+
 .button-subscribe {
   font: inherit;
   font-style: normal;
@@ -708,7 +715,7 @@ body {
 .footer-social-button-vk:active,
 .footer-social-button-tme:active,
 .footer-social-button-youtube:active {
-  color: rgba(104, 162, 202, 1);
+  color: rgba(104, 162, 202, 0.3);
 }
 
 
@@ -721,13 +728,6 @@ body {
 }
 
 .footer-contacts-phone {
-  margin: 0;
-  padding: 0;
-
-}
-
-a[href^="tel:"] {
-  font: inherit;
   font: inherit;
   font-style: normal;
   font-weight: 400;
@@ -736,20 +736,22 @@ a[href^="tel:"] {
   text-align: center;
   text-transform: uppercase;
   color: rgba(0, 0, 0, 1);
+  list-style-type: none;
   text-decoration: none;
-
+  margin: 0;
+  padding: 0;
 }
 
-a[href^="tel:"]:focus {
+.footer-contacts-phone:hover {
   color: rgba(117, 97, 87, 1);
   outline: none;
 }
 
-a[href^="tel:"]:hover {
+.footer-contacts-phone:focus {
   color: rgba(117, 97, 87, 1);
 }
 
-a[href^="tel:"]:active {
+.footer-contacts-phone:active {
   color: rgba(117, 97, 87, 0.30);
 }
 
@@ -892,7 +894,7 @@ a[href^="tel:"]:active {
   background-position: right 20px center;
 }
 
-input.field-date::placeholder {
+.field-date::placeholder {
   color: rgba(0, 0, 0, 0.6);
   background-color: rgba(242, 242, 242, 1);
 }
@@ -1019,10 +1021,11 @@ input.field-date::placeholder {
   font-style: normal;
   font-weight: 400;
   line-height: 21px;
+  margin: 0;
   padding-left: 157px;
   padding-top: 4px;
-  padding-bottom: 23px;
-  margin: 0;
+  margin-bottom: 23px;
+
 }
 
 .confirm-message {
