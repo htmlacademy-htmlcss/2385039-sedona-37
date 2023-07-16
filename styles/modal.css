@@ -850,13 +850,13 @@ body {
 }
 
 .field-group {
-  display: grid;
-  grid-template-columns: 137px 440px;
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
   margin: 0;
   padding: 0;
+  margin-top: 25px;
   width: 577px;
-  row-gap: 48px;
 }
 
 
@@ -873,6 +873,11 @@ body {
   margin: 0;
 }
 
+.date-form {
+  width: 137px;
+  display: flex;
+  align-items: center;
+}
 
 .field-date {
   font: inherit;
@@ -882,6 +887,7 @@ body {
   font-weight: 700;
   line-height: 24px;
   padding: 12px 20px;
+  margin: 0;
   border: none;
   appearance: none;
   width: 440px;
@@ -1021,9 +1027,10 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 21px;
+  padding: 0;
   margin: 0;
-  padding-left: 157px;
-  padding-top: 4px;
+  margin-left: 157px;
+  margin-top: 4px;
   margin-bottom: 23px;
 
 }
@@ -1035,10 +1042,11 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 21px;
-  padding-left: 157px;
-  padding-top: 4px;
-  padding-bottom: 23px;
+  padding: 0;
   margin: 0;
+  margin-left: 157px;
+  margin-top: 4px;
+  margin-bottom: 23px;
 }
 
 .tooltip {
