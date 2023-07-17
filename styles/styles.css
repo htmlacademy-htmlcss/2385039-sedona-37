@@ -84,9 +84,13 @@ body {
   width: 170px;
   padding-right: 30px;
   margin-bottom: -6px;
-  margin-right: -2px;
+  margin-right: -3px;
   object-fit: contain;
   z-index: 1;
+}
+
+.page-header-logo:hover {
+  opacity: 0.8;
 }
 
 .navigation-list {
@@ -102,6 +106,10 @@ body {
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+.navigation-item:hover {
+  opacity: 0.7;
 }
 
 .navigation-link {
@@ -176,6 +184,12 @@ body {
   position: relative;
 }
 
+.navigation-icons-search:hover,
+.navigation-icons-heart:hover {
+  opacity: 0.7;
+}
+
+
 .navigation-icons-heart::before {
   content: "12";
   color: rgba(255, 255, 255, 1);
@@ -193,15 +207,19 @@ body {
   background: #7DB54F;
   position: absolute;
   top: 0;
-  right: 0;
+  right: 3px;
 }
 
 .navigation-user-link {
   border-radius: 4px;
   padding: 8px 34px;
   margin: 0;
+  margin-top: 3px;
   background: #756157;
   margin-left: 20px;
+  width: 160px;
+  height: 36px;
+  box-sizing: border-box;
 }
 
 .navigation-user-link:hover,
@@ -309,9 +327,8 @@ body {
 
 .advantages-item {
   margin: 0;
-  padding: 103px 85px;
+  padding: 110px 83px;
   width: 400px;
-  min-height: 385px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -343,6 +360,8 @@ body {
 .advantages-item:last-child {
   background-color: #82B3D3;
   color: #FFFFFF;
+  margin: 0;
+  padding: 103px 83px;
 }
 
 
@@ -365,7 +384,10 @@ body {
   width: 175px;
   margin: 0 auto;
   margin-bottom: 30px;
+  padding: 0;
   position: relative;
+  display: flex;
+  justify-content: center;
 }
 
 
@@ -394,7 +416,7 @@ body {
   text-align: center;
   width: 230px;
   margin: 0 auto;
-  margin-top: 30px;
+  margin-top: 33px;
 }
 
 .invite {
@@ -402,7 +424,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 0;
+  margin: 0 auto;
   padding: 64px 0;
 }
 
@@ -434,14 +456,14 @@ body {
 /* Сервис */
 .services {
   width: 1200px;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 }
 
 .services-list {
   display: flex;
   flex-wrap: wrap;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 }
 
@@ -469,7 +491,7 @@ body {
   text-transform: uppercase;
   width: 230px;
   margin: 0;
-  margin-top: 30px;
+  margin-top: 29px;
   padding: 0;
 }
 
@@ -484,6 +506,8 @@ body {
   margin: 0;
   margin-top: 30px;
   padding: 0;
+  display: flex;
+  justify-content: center;
 }
 
 .services-icons {
@@ -653,6 +677,24 @@ body {
   height: 52px;
   padding: 8px 50px;
 }
+
+.button-subscribe:focus-visible {
+  outline: none;
+}
+
+.button-subscribe:hover {
+  background-color: rgba(104, 162, 202, 1);
+}
+
+.button-subscribe:focus {
+  background-color: rgba(104, 162, 202, 1);
+}
+
+.button-subscribe:active {
+  background-color: rgba(104, 162, 202, 1);
+  color: rgba(255, 255, 255, 0.3);
+}
+
 
 /* Подвал сайта */
 .page-footer {
@@ -1068,8 +1110,8 @@ body {
 
 .custom-from {
   position: absolute;
-  bottom: 57px;
-  right: 157px;
+  bottom: 567px;
+  right: 162px;
 
 }
 
@@ -1175,7 +1217,7 @@ body {
   border-radius: 4px;
   width: 191px;
   height: 36px;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
   color: rgba(255, 255, 255, 1);
 }
 
@@ -1285,6 +1327,11 @@ body {
   max-height: 49px;
 }
 
+.select-control:focus-visible {
+  border: none;
+}
+
+
 .select-buttons {
   display: grid;
   grid-template-columns: repeat(3, auto);
@@ -1304,10 +1351,12 @@ body {
 
 .select-grid-toggle:hover {
   outline: 2px solid #000000;
+  border: none;
 }
 
 .select-grid-toggle:focus {
   outline: 2px solid #68A2CA;
+  border: none;
 }
 
 .selectgrid-toggle:active {
@@ -1679,25 +1728,26 @@ body {
 
 .modal-title {
   margin: 0;
-  margin-bottom: 64px;
+  padding: 0;
+  padding-bottom: 41px;
   font: inherit;
-  font-size: 32px;
-  line-height: 35px;
+  font-style: normal;
+  font-size: 30px;
+  line-height: 36px;
   font-weight: 700;
   color: rgba(0, 0, 0, 1);
   text-transform: uppercase;
+  width: 413px;
 }
+
 
 .field-group {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
   margin: 0;
   padding: 0;
-  margin-top: 25px;
-  width: 577px;
+  margin-top: 23px;
 }
-
 
 
 .date-form,
@@ -1713,10 +1763,34 @@ body {
   margin: 0;
 }
 
-.date-form {
-  width: 137px;
+.date-wrapper {
   display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+
+}
+
+.date-form-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 137px;
   align-items: center;
+
+}
+
+.date-form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 4px;
+
+}
+
+.field-date-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 440px;
 }
 
 .field-date {
@@ -1726,20 +1800,46 @@ body {
   font-style: normal;
   font-weight: 700;
   line-height: 24px;
-  padding: 12px 20px;
-  margin: 0;
-  margin-top: 25px;
   border: none;
   appearance: none;
   width: 440px;
-  height: 48px;
   background-image: url(../images/modal-container/date.svg);
   background-repeat: no-repeat;
   border-radius: 4px;
   box-sizing: border-box;
   background-color: rgba(242, 242, 242, 1);
   background-position: right 20px center;
+  padding: 12px 20px;
+  margin-bottom: 4px;
 }
+
+
+.error-message {
+  color: rgba(255, 87, 87, 1);
+  font: inherit;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  padding: 0;
+  margin: 0;
+  padding-left: 157px;
+  text-align: left;
+}
+
+.confirm-message {
+  color: rgba(51, 51, 51, 1);
+  font: inherit;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  padding: 0;
+  margin: 0;
+  padding-left: 157px;
+  text-align: left;
+}
+
 
 .field-date::placeholder {
   color: rgba(0, 0, 0, 0.6);
@@ -1762,27 +1862,28 @@ body {
   grid-template-columns: 247px 242px;
   width: 577px;
   align-items: center;
-  justify-content: space-between;
+  margin-top: 23px;
 }
 
 .adults {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 91px 110px;
+  gap: 46px;
   width: 247px;
   padding: 0;
   margin: 0;
   align-items: center;
-  justify-content: space-between;
 }
 
 .child {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 86px 110px;
+  gap: 46px;
   margin: 0;
   padding: 0;
   align-items: center;
   width: 242px;
-  justify-content: space-between;
+  margin-left: 88px;
 }
 
 .tooltip-container {
@@ -1791,8 +1892,9 @@ body {
 }
 
 .quantity-buttons {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 40px 30px 40px;
+  width: 110px;
   margin: 0;
   padding: 0;
   border-radius: 4px;
@@ -1808,12 +1910,11 @@ body {
   line-height: 20px;
   border: none;
   box-sizing: border-box;
-  border-radius: 4px;
   appearance: none;
   width: 32px;
   height: 48px;
-  margin: 0 1px;
-  padding: 14px 0;
+  margin: 0;
+  padding: 0;
   background-color: rgba(242, 242, 242, 1);
   text-align: center;
 }
@@ -1822,16 +1923,17 @@ body {
 .plus {
   width: 40px;
   height: 48px;
-  margin: 0 2px;
-  padding: 14px 0;
-  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
   border: none;
+  box-sizing: border-box;
   border-radius: 4px;
   color: rgba(117, 97, 87, 0.3);
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 
 .minus:hover,
 .plus:hover,
@@ -1841,53 +1943,21 @@ body {
 }
 
 .minus:focus,
-.plus:focus {
+.plus:focus,
+.field-quantity:focus,
+.minus:focus-visible,
+.plus:focus-visible,
+.field-quantity:focus-visible {
   color: rgba(0, 0, 0, 1);
-  outline: 3px solid rgba(130, 179, 211, 1);
-}
-
-.input.field-quantity:focus,
-.input.field-quantity:focus-within {
   outline: none;
 }
 
-.input.field-quantity:active {
-  outline: none;
-}
 
 .minus:active,
-.plus:active {
+.plus:active,
+.field-quantity:active {
   color: rgba(0, 0, 0, 0.2);
   outline: none;
-}
-
-.error-message {
-  color: rgba(255, 87, 87, 1);
-  font: inherit;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 21px;
-  padding: 0;
-  margin: 0;
-  margin-left: 157px;
-  margin-top: 4px;
-  margin-bottom: 23px;
-
-}
-
-.confirm-message {
-  color: rgba(51, 51, 51, 1);
-  font: inherit;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 21px;
-  padding: 0;
-  margin: 0;
-  margin-left: 157px;
-  margin-top: 4px;
-  margin-bottom: 23px;
 }
 
 .tooltip {

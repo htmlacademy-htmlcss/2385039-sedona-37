@@ -103,7 +103,7 @@
                   alt="Фото моста дьявола.">
               </li>
               <li class="advantages-item">
-                <h3 class="advantages-title">Там есть мост дьявола</h3>
+                <h3 class="advantages-title">Там есть мост&nbsp;дьявола</h3>
                 <p class="advantages-description">
                   Да, по нему можно пройти! Если вы осмелитесь, разумеется
                 </p>
@@ -126,21 +126,21 @@
               <div class="services-icons services-icons-housing"></div>
               <h3 class="services-title">Жильё</h3>
               <p class="services-description">
-                Рекомендуем пожить в настоящем мотеле, всё как в кино!
+                Рекомендуем пожить в&nbsp;настоящем мотеле, всё&nbsp;как&nbsp;в&nbsp;кино!
               </p>
             </li>
             <li class="services-item">
               <div class="services-icons services-icons-food"></div>
               <h3 class="services-title">Еда</h3>
               <p class="services-description">
-                Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
+                Всегда заказывайте топовый&nbsp;фирменный&nbsp;бургер, вы не разочаруетесь!
               </p>
             </li>
             <li class="services-item">
               <div class="services-icons services-icons-souvenirs"></div>
               <h3 class="services-title">Сувениры</h3>
               <p class="services-description">
-                Не только китайского, но и настоящего местного производства!
+                Не только китайского, но&nbsp;и&nbsp;настоящего&nbsp;местного производства!
               </p>
             </li>
           </ul>
@@ -242,17 +242,29 @@
           <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
             <div class="form-label">
               <div class="field-group">
-                <label class="date-form" for="date-entry">Дата заезда:</label>
-                <input class="field-date" type="text" id="date-entry" name="date-entry" value="27 апреля 2020"
-                  placeholder="Укажите дату">
+                <div class="date-wrapper">
+                  <div class="date-form-wrapper">
+                    <label class="date-form" for="date-entry">Дата заезда:</label>
+                  </div>
+                  <div class="field-date-wrapper">
+                    <input class="field-date" type="text" id="date-entry" name="date-entry" value="27 апреля 2020"
+                      placeholder="Укажите дату">
+                  </div>
+                </div>
+                <span class="error-message">Мы не можем отправить вас в прошлое.</span>
               </div>
-              <p class="error-message">Мы не можем отправить вас в прошлое.</p>
               <div class="field-group">
-                <label class="date-form" for="date-departure">Дата выезда:</label>
-                <input class="field-date" type="text" id="date-departure" name="date-departure" value="1 сентября 2023"
-                  placeholder="Укажите дату">
+                <div class="date-wrapper">
+                  <div class="date-form-wrapper">
+                    <label class="date-form" for="date-departure">Дата выезда:</label>
+                  </div>
+                  <div class="field-date-wrapper">
+                    <input class="field-date" type="text" id="date-departure" name="date-departure"
+                      value="1 сентября 2023" placeholder="Укажите дату">
+                  </div>
+                  <span class="confirm-message">На эти даты есть свободные номера. Пока есть.</span>
+                </div>
               </div>
-              <p class="confirm-message">На эти даты есть свободные номера. Пока есть.</p>
               <div class="quantity-container">
                 <div class="adults">
                   <label class="quantity-form" for="quantity-adults">Взрослые:</label>
